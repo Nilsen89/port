@@ -5,7 +5,6 @@
  */
 
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap'; 
 import './Menu.css';
 
 class Menu extends Component {
