@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Col, Row } from 'react-bootstrap';
 import Header from './Header';
-import Menu from './Menu';
 import Title from './Title';
 import ExternalLinks from './ExternalLinks';
 
@@ -12,7 +11,7 @@ class Top extends Component {
 					<Grid>
 						<Row className="show-grid">
 							<Col md={12}>
-								<Header />
+								<Header pageName={ this.props.pageName } />
 							</Col>
 						</Row>
 						<Row className="show-grid">
@@ -23,11 +22,6 @@ class Top extends Component {
 						<Row className="show-grid">
 							<Col md={12}>
 								<ExternalLinks />
-							</Col>
-						</Row>
-						<Row className="show-grid">
-							<Col md={12}>
-								<Menu />
 							</Col>
 						</Row>
 					</Grid>

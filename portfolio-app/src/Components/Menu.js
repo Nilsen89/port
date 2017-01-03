@@ -6,15 +6,16 @@
 
 import React, { Component } from 'react';
 import './Menu.css';
+import { Link } from 'react-router';
 
 class Menu extends Component {
 	render() {
 		return (
 			<div className="menu">
-				<a href=""> Portfolio </a>
-				<a href=""> CV </a>
-				<a href=""> Blogg </a>
-				<a href=""> Contact </a>
+				<Link to=""> Portfolio </Link>
+				<Link to="CV"> CV </Link>
+				<Link to="Blog"> Blog </Link>
+				<Link to="Contact"> Contact </Link>
 			</div>
 		);	
 	}
