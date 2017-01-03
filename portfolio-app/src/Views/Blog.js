@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import Menu from '../Components/Menu';
 import Top from "./../Components/Top";
+import Menu from '../Components/Menu';
 import Copyright from './../Components/Copyright';
 
-class CV extends Component {
+class Blog extends Component {
   render() {
     return (
-		<div className="CV">
-			<Top pageName={ "CV" } />
+		<div className="blog">
+			<Top pageName={ "Blog" }/>	
 			<Menu />
-			CV
+			BLOG
 			<Copyright />
       	</div>
     );
   }
 }
 
-export default CV;
+export default Blog;
