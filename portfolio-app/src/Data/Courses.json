@@ -48,10 +48,10 @@
 			"url": "https://www.ntnu.edu/studies/courses/MA0301"
 		},
 		{ 
-			"code": "MA0002",
-			"name": "Mathematical Methods B",
+			"code": "MA0003",
+			"name": "Mathematical Methods",
 			"info": "STUFF",
-			"url": "https://www.ntnu.edu/studies/courses/MA0002"
+			"url": ""
 		},
 		{ 
 			"code": "TDT4140",

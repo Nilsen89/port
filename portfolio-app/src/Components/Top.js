@@ -8,23 +8,9 @@ class Top extends Component {
 	render() {
 			return(
 				<div className="App">
-					<Grid>
-						<Row className="show-grid">
-							<Col md={12}>
-								<Header pageName={ this.props.pageName } />
-							</Col>
-						</Row>
-						<Row className="show-grid">
-							<Col md={12}>
-								<Title />
-							</Col>
-						</Row>
-						<Row className="show-grid">
-							<Col md={12}>
-								<ExternalLinks />
-							</Col>
-						</Row>
-					</Grid>
+					<Header pageName={ this.props.pageName } />
+					<Title />
+					<ExternalLinks />
       			</div>
 			);
 	}
