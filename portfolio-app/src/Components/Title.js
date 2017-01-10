@@ -5,8 +5,8 @@ class Title extends Component {
 		render() {
 			return (
 				<div className="title">
-					Christoffer A. Nilsen 
-				</div>				
+					C.A. Nilsen 
+				</div>
 			);
 		}
 } export default Title;

@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
-import { Grid, Col, Row } from 'react-bootstrap';
-import Header from './Header';
 import Title from './Title';
-import ExternalLinks from './ExternalLinks';
+import {Grid, Row, Col} from 'react-bootstrap';
+import Menu from './Menu';
 
 class Top extends Component {
 	render() {
 			return(
 				<div className="App">
-					<Header pageName={ this.props.pageName } />
-					<Title />
-					<ExternalLinks />
-      			</div>
+					<Grid>
+						<Row>
+							<Col md={6}>
+								<Title />
+							</Col>
+							<Col md={6} mdOffset={0}>
+								<Menu />
+							</Col>
+						</Row>
+					</Grid>
+					<hr/>
+	      			</div>
 			);
 	}
 } export default Top;

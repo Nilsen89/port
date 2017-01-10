@@ -1,8 +1,6 @@
 .Dropbox {
-
 	height: 25px;
 	margin: 0;
-
 }
 
 .Dropbox:hover {
@@ -10,8 +8,5 @@
 }
 
 .info {
-	
-	border: 1px dotted #c2c2a3;
 	margin: 0;
-
 }

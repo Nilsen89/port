@@ -12,7 +12,7 @@ class Courses extends Component {
 
 	render() {
 		return(
-			<div className="Section">
+			<div className="Section" style={{"text-align":"center"}}>
 				<h3> { this.props.sectionName } </h3>
 				<div>
 					{ this.state.obj.map( function(obj) {

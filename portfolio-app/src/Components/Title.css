@@ -1,3 +1,10 @@
 .title {
-	font-size: 22px;
+	font-size: 36px;
+	font-family: 'Playfair Display', serif;
+	height: 10vh;
+	display: flex;
+	text-align: left;
+	align-items: center;
+	justify-content: left;
+	blackground-color: white;
 }
