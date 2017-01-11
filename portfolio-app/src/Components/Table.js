@@ -8,8 +8,12 @@ class Table extends Component {
 			<div className="Table">
 				<Grid>
 					<Row>
-						<Col md={6} mdOffset={3}>
-							E-Mail: nilsendesign@live.no
+						<Col md={4} mdOffset={4}>
+							<div style={{"text-align":"center"}}>
+								If you wish to get in contact or receive my CV contact me on the e-mail adress below.
+								<br/><br/>
+								E-Mail: xxx@live.no
+							</div>
 						</Col>
 					</Row>
 				</Grid>

@@ -5,15 +5,24 @@ import Sidebar from './Sidebar';
 
 class BlogContent extends Component {
 	render() {
+
+		let file = require("./../Data/Articles.json");
+
 		return(
 			<div className="BlogContent">
 				<Grid>
 					<Row>
 						<Col md={9} mdOffSet={0}>
 							<div className="content">
-								<Article title={"XSS(Cross-Site-Scripting)"} 
-									content={" Article stuff here and here, nbut nothing ufna amdpa omawdpo "}
-								/>
+								{ file.map( function(file) {
+									return <Article title={ file.title } 
+											date={ file.date }  
+											info={ file.info }
+										       	comments={0}
+											tags={file.tags}
+											categories={file.categories}	
+										/>						   
+								})}
 							</div>
 						</Col>
 						<Col md={2} mdOffset={1}>

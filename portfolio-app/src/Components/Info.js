@@ -6,7 +6,7 @@ class Info extends Component {
 			<div className="Info" style={{"margin-top":"10px"}}>
 				<span style={{"font-weight":"bold"}}>Info</span>
 				<br/>
-				I use this site to learn and document subjects I find interesting, and displaying my education.
+				I use this site to learn and document subjects I find interesting.
 			</div>	
 		);
 	}

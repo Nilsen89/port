@@ -5,7 +5,7 @@ class Title extends Component {
 		render() {
 			return (
 				<div className="title">
-					C.A. Nilsen 
+					C·A<span style={{"color":"red"}}>· </span> Nilsen 
 				</div>
 			);
 		}

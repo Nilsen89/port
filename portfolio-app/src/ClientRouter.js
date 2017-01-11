@@ -11,9 +11,8 @@ class ClientRouter extends Component {
 	render() {
 		return(
 			<Router history={hashHistory}>
-				<Route path="/" component={Portfolio} />
+				<Route path="/" component={Blog} />
 				<Route path="/CV" component={CV} />
-				<Route path="/Blog" component={Blog} />
 				<Route path="/Contact" component={Contact} />
 			</Router>	
 		);

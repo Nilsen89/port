@@ -17,6 +17,9 @@ class CV extends Component {
 				<Section sectionName={ "Hobbies" } 
 					file={ JSON.parse(JSON.stringify(require("./../Data/Hobbies.json"))) } 
 				/>
+				<Section sectionName={ "Education/Degrees" } 
+					file={ JSON.parse(JSON.stringify(require("./../Data/Education.json"))) } 
+				/>
 				<Section sectionName={ "Courses" } 
 					file={ JSON.parse(JSON.stringify(require("./../Data/Courses.json"))) } 
 				/>
