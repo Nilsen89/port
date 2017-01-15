@@ -20,18 +20,14 @@ class Menu extends Component {
 			<div className="menu">
 				<Grid>
 					<Row>
-						<Col md={12}>
-							<IndexLink to="/" style={styles}>Blog</IndexLink>
+						<Col md={4} mdOffset={3}>
+						<IndexLink to="CV" activeStyle={{color:"red"}} style={styles}>Curriculum vitae</IndexLink>
 						</Col>
-					</Row>
-					<Row>
-						<Col md={12}>
-							<Link to="CV" style={styles}>Curriculum vitae</Link>
+						<Col md={2}>
+						<Link to="/" activeStyle={{color:"red"}} style={styles}>Blog</Link>
 						</Col>
-					</Row>
-					<Row>
-						<Col md={12}>
-							<IndexLink to="Contact" style={styles}>Contact</IndexLink>
+						<Col md={3}>
+						<IndexLink to="Contact" activeStyle={{color:"red"}} style={styles}>Contact</IndexLink>
 						</Col>
 					</Row>
 				</Grid>

@@ -4,8 +4,8 @@ class ExternalLinks extends Component {
 
 	render() {
 		return(
-			<div className="externalLinks" style={{"margin-top":"10px"}}>
-				<span style={{"font-weight":"bold"}}>Follow Me</span>
+			<div className="externalLinks" style={{marginTop:"10px"}}>
+				<span style={{fontWeight:"bold"}}>Follow Me</span>
 				<br/>
 				<a href="www.facebook.com/nilsen">
 					<img src={require("../images/fb-icon.png")} alt="fb-icon.png" width="25" height="25" />

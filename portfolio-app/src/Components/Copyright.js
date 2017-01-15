@@ -6,9 +6,8 @@ class Copyright extends Component {
 		let date = new Date().getFullYear();
 
 		return (
-			<div className="Copyright" style={{"text-align":"center"}}>
-				<hr />
-				Copyright © { date } Christoffer A. Nilsen - MIT License
+			<div className="Copyright" style={{textAlign:"left", marginTop:"15px", fontSize:"12"}}>
+				Copyright © { date } Christoffer A. Nilsen
 			</div>			
 		);
 	}

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Title from './Title';
 import {Grid, Row, Col} from 'react-bootstrap';
 import Menu from './Menu';
-import AboutMe from './AboutMe.js';
-import Copyright from './../Components/Copyright';
 
 class Top extends Component {
 	render() {
@@ -11,26 +9,15 @@ class Top extends Component {
 				<div className="Top" style={{marginTop:"15px"}}>
 					<Grid>
 						<Row>
-							<Col md={3}>
+							<Col md={6}>
 								<Title />
 							</Col>
-						</Row>
-						<Row>
-							<Col md={3}>
+							<Col md={6} mdOffset={0}>
 								<Menu />
 							</Col>
 						</Row>
-						<Row>
-							<Col md={3}>
-								<AboutMe />
-							</Col>
-						</Row>
-						<Row>
-							<Col md={3}>
-								<Copyright />
-							</Col>
-						</Row>
 					</Grid>
+					<hr/>
 	      			</div>
 			);
 	}

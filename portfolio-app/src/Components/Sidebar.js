@@ -10,7 +10,7 @@ class Sidebar extends Component {
 		return(
 			<div className="Sidebar">
 				<Grid>
-					<Row>
+					<Row md={2}>
 						<Col md={2}>
 							<AboutMe />
 						</Col>

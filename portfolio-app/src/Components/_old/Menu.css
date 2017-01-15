@@ -1,9 +1,10 @@
-.Title {
+.menu {
+	font-size: 18px;
 	font-family: 'Playfair Display', serif;
 	height: 10vh;
 	display: flex;
-	text-align: left;
+	text-align: right;
 	align-items: center;
-	justify-content: left;
+	justify-content: right;
 	text-decoration: none;
 }

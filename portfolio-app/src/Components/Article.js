@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Grid, Col, Row } from 'react-bootstrap';
 import './Article.css';
+import {Link} from 'react-router';
 
 class Article extends Component {
 	render() {
-
 		let extras = [
 			{
 				name: "Date", 
@@ -24,13 +24,17 @@ class Article extends Component {
 			}
 		];
 
+		let toPrint = this.props.small ? this.props.info : this.props.content;
+
 		return(
-			<div className="Article" style={{"margin-bottom":"50px"}}>
+			<div className="Article" style={{marginBottom:"50px"}}>
 				<Grid>
 					<Row>
 						<Col md={9} mdOffSet={0}>
-							<div style={{"font-size":"28"}}>
-								{ this.props.title }
+							<div style={{fontSize:"28"}}>
+								<Link to={"Blog/"+this.props.title} style={{color:"black", textDecoration:"none", outline:"none"}}>
+									{ this.props.title }
+								</Link>
 							</div>
 						</Col>
 					</Row>
@@ -38,9 +42,9 @@ class Article extends Component {
 					{ 
 						extras.map(extra => {
 							return(
-								<Col md={2} style={{"color":"gray"}}>
-									<span style={{"font-size":"14"}}>{extra.name}: </span>
-									<span style={{"font-size":"12"}}>{extra.value}</span>
+								<Col md={2} style={{color:"gray"}}>
+									<span style={{fontSize:"14"}}>{extra.name}: </span>
+									<span style={{fontSize:"12"}}>{extra.value}</span>
 								</Col>
 							)
 						})
@@ -48,7 +52,18 @@ class Article extends Component {
 
 					</Row>
 					<Row>
-						<Col md={9} mdOffset={0}>{ this.props.info }</Col>
+						<Col md={9} mdOffset={0}>
+							<div style={{textAlign:"justify", marginTop:"10px"}}>
+								{toPrint.split("<br/>").map(function(item) {
+									  return (
+									  	<span>
+									        	{item}
+										     	<br/><br/>
+										</span>
+																        )
+								})}
+							</div>
+						</Col>
 					</Row>
 				</Grid>
 			</div>	

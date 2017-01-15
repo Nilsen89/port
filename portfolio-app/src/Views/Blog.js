@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import Top from "./../Components/Top";
-import Copyright from './../Components/Copyright';
-import BlogContent from './../Components/BlogContent';
+import {Grid, Row, Col} from 'react-bootstrap';
+import Sidebar from "./../Components/Sidebar.js";
 
 class Blog extends Component {
 	render() {
 		return (
-			<div className="blog">
-				<Top />	
-				<BlogContent />
-				<Copyright />
+			<div className="Blog">
+				<Grid>
+					<Row>
+						<Col md={12} mdOffSet={0}>
+							{this.props.children}
+						</Col>
+					</Row>
+				</Grid>
 		      	</div>
     		);
   	}

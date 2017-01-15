@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import Table from './../Components/Table';
 
 class Contact extends Component {
 	render() {
 		return (
-			<div className="contact">
-				<Table />
+			<div>
+				<h2 style={{textAlign:"center"}}>
+					404.. This page is not found!<br/>
+					How did you end up here?
+				</h2>
       			</div>
 		);
 	}
