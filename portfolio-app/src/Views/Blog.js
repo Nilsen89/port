@@ -8,7 +8,7 @@ class Blog extends Component {
 			<div className="Blog">
 				<Grid>
 					<Row>
-						<Col md={12} mdOffSet={0}>
+						<Col md={12} mdOffSet={0} style={{marginTop:"10px"}}>
 							{this.props.children}
 						</Col>
 					</Row>

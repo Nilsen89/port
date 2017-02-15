@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Section from '../Components/Section';
+import cvContent from '../Components/cvContent';
 
 class CV extends Component {
   	render() {
     		return (
 			<div className="CV">
+				<cvContent />
 				<Section sectionName={ "Skills" } 
 					file={ JSON.parse(JSON.stringify(require("./../Data/Skills.json"))) } 
 				/>

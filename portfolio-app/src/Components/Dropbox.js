@@ -15,12 +15,14 @@ class Dropbox extends Component {
 		return (
 			<Grid>
 				<Row>
-					<Col md={12}>
+					<Col md={6} mdOffset={1}>
 						<div className="Dropbox" onClick={() => this.setState({ open: !this.state.open })}>
 							{ this.props.code }	 { this.props.name }
 						</div>
 					</Col>
-					<Col md={6} mdOffset={3}>
+				</Row>
+				<Row>
+					<Col md={6} mdOffset={1}>
 						<Collapse in={this.state.open}>
 							<div className="info">
 								{ this.props.info }
@@ -31,5 +33,4 @@ class Dropbox extends Component {
 			</Grid>
 		);
 	}
-
 } export default Dropbox;

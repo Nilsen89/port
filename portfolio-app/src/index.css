@@ -1,5 +1,17 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+
+	display: flex;
+       	overflow: hidden;
+        height: 100vh;
+	margin-top: -100px;
+	padding-top: 100px;
+	position: relative;
+	width: 100%;
+	backface-visibility: hidden;
+	will-change: overflow;
+	
+	overflow-x: hidden;
 }

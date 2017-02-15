@@ -15,7 +15,7 @@ class BlogContent extends Component {
 		}
 
 		return(
-			<div>
+			<div style={{marginTop:"20px"}}>
 				<Article title={article.title} 
 					date={article.date}  
 					info={article.info}

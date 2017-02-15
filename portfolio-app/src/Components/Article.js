@@ -42,9 +42,9 @@ class Article extends Component {
 					{ 
 						extras.map(extra => {
 							return(
-								<Col md={2} style={{color:"gray"}}>
-									<span style={{fontSize:"14"}}>{extra.name}: </span>
-									<span style={{fontSize:"12"}}>{extra.value}</span>
+								<Col md={2}>
+									<span style={{fontSize:"14", color:"#5A4662"}}>{extra.name}: </span>
+									<span style={{fontSize:"12", color:"#374061"}}>{extra.value}</span>
 								</Col>
 							)
 						})

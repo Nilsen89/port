@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Top from "./../Components/Top";
+import Side from "./../Components/Side";
 import {Grid,Row,Col} from 'react-bootstrap';
+import './LayoutVertical.css';
 
 class Contact extends Component {
 	render() {
 
-		let styles = {
+		let sideStyles = {
 			fontFamily: "'Playfair Display', serif",
 			height: "100vh",
 			display: "flex",
@@ -13,20 +14,21 @@ class Contact extends Component {
 			alignItems: "center",
 			justifyContent: "left",
 			textDecoration: "none",
-			borderRight: "1px solid #d3d3d3"
-		
+			borderRight: "1px solid #21385A"
 		};
 
 		return (
 			<Grid>
 				<Row>
 					<Col md={3}>
-						<div style={styles}>
-							<Top />
+						<div style={sideStyles}>
+							<Side />
 						</div>
 					</Col>
 					<Col md={9}>
-						{this.props.children}
+						<span className="bodyContent">
+							{this.props.children}
+						</span>
 					</Col>
 				</Row>
 			</Grid>
